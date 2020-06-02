@@ -1,0 +1,19 @@
+@mixin part{
+    padding-bottom: 15rem;
+    padding-top: 15rem;
+    height: 100%;
+} 
+@mixin h3{    
+    font-family: cursive;
+    color: #5f2e34;
+    font-style: oblique;
+}
+@mixin line{
+    text-decoration: none;
+    transition: background-size .5s;
+    padding-bottom: 5px;
+    font-size: 1.5rem;
+ a:hover {
+    background-size: 100% 100%;      
+}
+}
