@@ -1,0 +1,154 @@
+@media (min-width: 2560px) and (max-width: 4000px)
+{
+  #container{
+  margin-left: 40rem;
+  margin-right: 40rem;
+
+  }  
+  .loading{
+    margin: 0 60rem 2rem 60rem;
+    font-size: 3rem;
+  }
+  .adresse{
+    font-size: 3rem;
+  }
+  header h1{
+    font-size: 5rem;
+  }
+  main{
+    padding: 2rem 20rem 2rem 20rem;
+    font-size: 2rem;
+  }
+  img{
+    width: 40%;
+  }
+  .price{
+    font-size: 2rem;
+  }
+  .line{
+    font-size: 2.5rem;
+  }
+  .finally{
+    line-height: inherit;
+  }
+  .subtitle{
+    font-size: 3rem;
+  }
+  .title-2{
+    font-size: 2rem;
+  }
+  .carte-4-4{
+    font-size: 2rem;
+  }
+}
+@media (min-width: 538px) and (max-width: 1024px)				
+{
+#container {  
+  margin: 15px;
+}
+.loading{
+margin: 0 20rem 2rem 20rem;
+}
+img{
+  width: 30%;
+}
+.carte-price{
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+.finally{
+  padding-left: 1rem;
+}
+.note1{
+  width: 10%;
+}
+main{
+  margin: 0 5rem 5rem 5rem;
+}
+} 
+@media (min-width: 538px) and (max-width: 768px)
+{
+
+  .menu{
+  width: 20rem;
+  }
+  h2{
+    font-size: 2rem;
+  }
+  .loading{
+    margin: 0 15rem 2rem 15rem;
+  }
+  main{
+  margin: 0;
+  padding:0;
+}
+  main{
+  margin: 2rem 2rem 2rem 2rem;
+}
+img{
+  width: 25%;
+}
+.carte-4-4{
+  font-size: 1rem;
+  font-weight: bold;
+}
+}
+@media (min-width: 320px) and (max-width: 538px)
+{
+  #container{
+    margin: 10px;
+  }
+  .adresse{
+    font-size: 1rem;
+    justify-content: space-between;
+  }
+  .loading{
+    margin: 0 2rem 2rem 2rem;
+  }
+  .loading_ball1{
+    margin-left: 10px;
+  }
+  h2{
+    font-size: 2rem;
+  }
+  img{
+    width: 20%;
+  }
+  main{
+    margin: 0 0 2rem 0;
+    padding: 0;
+    &.main-1{
+      padding: 0;
+    }
+    &.main-2{
+      padding: 0;
+    }
+    &.main-3{
+      padding: 0;
+    }
+  }
+  .carte-price{
+    padding: 0;
+  }
+  .finally{
+    padding: 0;
+  }
+  .line{
+    font-size: 1.1rem;
+  }
+  h4{
+    font-size: 0.90rem;
+  }
+  .carte-4-4{
+    font-size: 0.90rem;
+  }
+  .price{
+    font-size: 1rem;
+  }
+  .subtitle{
+    font-size: 1rem;
+  }
+  .note1{
+    width: 10%;
+  }
+}                                                       

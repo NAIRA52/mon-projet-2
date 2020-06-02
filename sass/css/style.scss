@@ -1,13 +1,16 @@
+@import "/mon-projet-2/sass/utils/mixins";
+@import "/mon-projet-2/sass/utils/variables";
+@import "/mon-projet-2/sass/utils/responsives";
+
+$color-primary:	#579c87;
+$color-secondary: #fdcb46;
+$color: #fbdcdb;
+
 *{ font-family: 'kalam','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, 'devonshire', sans-serif;
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-}
-
-$color-primary:	#579c87;
-$color-secondary: #fdcb46;
-$color: #fbdcdb; 
-                      
+}              
                       /* l'entête*/
 header{
   background-color: $color-primary;
@@ -64,11 +67,6 @@ a{
       color: $color-secondary;
   }
                                           /*la couleur des cartes*/
-@mixin part{
-      padding-bottom: 15rem;
-      padding-top: 15rem;
-      height: 100%;
-  }
   .part_1                                
   {
       @include part;
@@ -219,36 +217,29 @@ h3{    font-family: cursive;
   animation-delay: 1000ms;
 }
                                       /* l'agencement 4 autres pages*/
-main
-{
-  background-color: #fbdcdb;
-  padding: 2rem 5rem 2rem 5rem;
-  margin: 0 10rem 5rem 10rem;
-  &.main-1{
+
+
+  @include main-1{
       background-color:#fff5fe;
       padding: 2rem 4rem 2rem 4rem;
   }
-  &.main-2{
+  @include main-2{
       background-color:#f9f9f9;
       padding: 2rem 5rem 2rem 5REM;
   }
-  &.main-3{
+  @include main-3{
       background-color: #fdfffd;
       padding: 2rem 5rem 2rem 5rem;
   }
-}
+
                                       /* menu des 4 pages*/   
-.carte{
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 1rem;
-  &.carte-2{
+
+  @include carte-2{
       color: #c97e26;
   }
-  &.carte-3{
+  @include carte-3{
       color:	#a96da0;
   }
-} 
 .carte-4-4{
   font-weight: 100;
   font-size: 1.3rem;
@@ -279,6 +270,8 @@ font-size: 3rem;
   background: linear-gradient(135deg,	rgb(204, 129, 49) 0%, rgb(179, 127, 207) 100%);
   color: transparent;
   -webkit-background-clip: text;
+  background-clip: text;
+
   }
   &.h2_menu3{
       font-family: 'Dancing Script';
@@ -287,13 +280,16 @@ font-size: 3rem;
       background: linear-gradient(135deg, #3964e8 50%,#abcbf7 100%);
       color: transparent;
       -webkit-background-clip: text;
+      background-clip: text;
+
   }
   &.h2_menu4{
       background: linear-gradient(135deg, #499c40 0%, #c3ff8b 90%);
       font-family: 'kalam';
       color: transparent;
      -webkit-background-clip: text;
-  }     
+     background-clip: text;
+  }  
 }
 .main-menu{
   padding-top: 2rem;
@@ -303,18 +299,8 @@ font-size: 3rem;
   flex-flow: nowrap;
   align-items: center;
 }                                         
-
-
                                               /* animations titre des menus des 4 pages*/
-@mixin line{
-      text-decoration: none;
-      transition: background-size .5s;
-      padding-bottom: 5px;
-      font-size: 1.5rem;
-}
-    a:hover {
-      background-size: 100% 100%;      
-}
+
 .title-1{
   @include line;
   background: linear-gradient(to top, rgba(255, 0, 0, 0.5) 0%, rgba(255, 0, 0, 0.5) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
@@ -363,6 +349,8 @@ font-size: 3rem;
   font-family: 'kalam';
   background: linear-gradient(to top,#2a9ffb 0%,#2a9ffb  10%, transparent 10.01%) no-repeat left bottom / 0 100%;  
 }
+
+
 .title-8{
   @include line;
   background: linear-gradient(to top, rgba(73,156,64,1) 0%, rgba(73,156,64,1) 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
@@ -412,7 +400,7 @@ font-size: 3rem;
     font-size: 2.5rem;
   }
   .finally{
-    LINE-HEIGHT: INHERIT;
+    line-height: inherit;
   }
   .subtitle{
     font-size: 3rem;

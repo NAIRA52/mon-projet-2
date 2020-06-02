@@ -28,8 +28,6 @@ header h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding-top: 3rem;
   padding-bottom: 1rem;
@@ -37,8 +35,6 @@ header h1 {
 
 /*la page principale*/
 #container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -146,8 +142,6 @@ h3 {
 
 /*footer*/
 .adresse {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -264,8 +258,6 @@ h3 {
   font-size: 2rem;
   background: #579c87;
   color: #fdcb46;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
@@ -344,8 +336,6 @@ main.main-3 {
 
 /* menu des 4 pages*/
 .carte {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -378,8 +368,6 @@ main.main-3 {
 
 .end {
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -420,8 +408,6 @@ h2.h2_menu4 {
 .main-menu {
   padding-top: 2rem;
   padding-bottom: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -583,7 +569,7 @@ a:hover {
     font-size: 2.5rem;
   }
   .finally {
-    LINE-HEIGHT: INHERIT;
+    line-height: inherit;
   }
   .subtitle {
     font-size: 3rem;
