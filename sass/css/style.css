@@ -685,10 +685,9 @@ a:hover {
         margin: 10px;
     }
     .adresse {
-        font-size: 1rem;
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
     }
     .loading {
         margin: 0 2rem 2rem 2rem;
@@ -711,8 +710,8 @@ a:hover {
         width: 20%;
     }
     main {
-        margin: 0 0 2rem 0;
-        padding: 0;
+        margin: 0 1rem 2rem 1rem;
+        padding: 1rem;
     }
     main.main-1 {
         padding: 0;
@@ -725,18 +724,23 @@ a:hover {
     }
     .carte-price {
         padding: 0;
+        text-align: center;
+    }
+    .carte {
+        flex-direction: column;
     }
     .finally {
         padding: 0;
+        text-align: center;
     }
     .line {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     h4 {
-        font-size: 0.90rem;
+        font-size: 1rem;
     }
     .carte-4-4 {
-        font-size: 0.90rem;
+        font-size: 1rem;
     }
     .price {
         font-size: 1rem;

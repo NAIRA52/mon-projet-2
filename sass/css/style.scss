@@ -19,7 +19,7 @@ header {
         color: $color-secondary;
         font-size: 3rem;
         font-family: sans-serif;
-        letter-spacing: -4px;
+        cursor: pointer;
     }
 }
 
@@ -154,11 +154,11 @@ h3 {
 /*animations mentions et contact*/
 
 .Mentions {
-    @include animations-vibreur;
+    @include effet-wiggle;
 }
 
 .contact {
-    @include animations-vibreur;
+    @include effet-wiggle;
 }
 
 

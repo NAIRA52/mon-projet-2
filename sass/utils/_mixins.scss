@@ -28,13 +28,13 @@
     padding-bottom: 1rem;
 }
 
-@mixin animations-vibreur {
+@mixin effet-wiggle {
      :hover {
-        animation: vibreur 0.82s cubic-bezier(.36, .07, .19, .97);
+        animation: wiggle 0.82s cubic-bezier(.36, .07, .19, .97);
         transform: translate3d(0, 0, 0);
-        -webkit-animation: vibreur 0.82s cubic-bezier(.36, .07, .19, .97);
+        -webkit-animation: wiggle 0.82s cubic-bezier(.36, .07, .19, .97);
     }
-    @keyframes vibreur {
+    @keyframes wiggle {
         10%,
         90% {
             transform: translate3d(-1px, 0, 0);
