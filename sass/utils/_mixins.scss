@@ -9,9 +9,11 @@
     transition: background-size .5s;
     padding-bottom: 5px;
     font-size: 1.5rem;
-    a:hover {
-        background-size: 100% 100%;
-    }
+    a: hover;
+    -webkit-transition: background-size .5s;
+    -moz-transition: background-size .5s;
+    -ms-transition: background-size .5s;
+    -o-transition: background-size .5s;
 }
 
 @mixin main {
@@ -28,12 +30,11 @@
 
 @mixin animations-vibreur {
      :hover {
-        animation: Mentions 0.82s cubic-bezier(.36, .07, .19, .97) both;
+        animation: vibreur 0.82s cubic-bezier(.36, .07, .19, .97);
         transform: translate3d(0, 0, 0);
-        backface-visibility: hidden;
-        perspective: 1000px;
+        -webkit-animation: vibreur 0.82s cubic-bezier(.36, .07, .19, .97);
     }
-    @keyframes Mentions {
+    @keyframes vibreur {
         10%,
         90% {
             transform: translate3d(-1px, 0, 0);
